@@ -65,17 +65,16 @@
   <div class="card">
     <div class="company">해한 AI 엔지니어링</div>
     <div class="title">AutoCAD 자동 출력기</div>
-    <div class="version">v1.1.0 최신버전</div>
+    <div class="version" id="ver">로딩 중...</div>
     <div class="divider"></div>
     <div class="desc">
       AutoCAD 도면을 자동으로 PDF &middot; PLT &middot; 인쇄 출력<br>
       도곽 자동 인식 &middot; 배치 출력 &middot; 도면번호 자동 파일명
     </div>
-    <a class="btn-download"
-       href="https://github.com/JAY-1979-SJW/autocad-auto-plotter/releases/download/v1.1.0/AutoCAD-AutoPlotter-Setup-v1.1.0.exe">
+    <a class="btn-download" id="dl-btn" href="#">
       &#x2B07; 설치파일 다운로드
     </a>
-    <div class="file-info">AutoCAD-AutoPlotter-Setup-v1.1.0.exe &middot; 약 23MB &middot; Windows 10/11</div>
+    <div class="file-info" id="file-info">Windows 10/11 &middot; 약 24MB</div>
     <div class="notice">
       <strong>&#x26A0; 설치 시 SmartScreen 경고가 뜨면:</strong><br>
       1. &quot;추가 정보&quot; 클릭<br>
@@ -88,5 +87,23 @@
     &nbsp;&middot;&nbsp;
     <a href="https://open.kakao.com/o/sMswngii" target="_blank">카카오 문의</a>
   </div>
+
+  <script>
+    fetch('https://jay-1979-sjw.github.io/ad-banner/banner.json?_=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const ver = data.min_version || '';
+        const url = data.update_url || '#';
+        document.getElementById('ver').textContent = 'v' + ver + ' 최신버전';
+        const btn = document.getElementById('dl-btn');
+        btn.href = url;
+        const filename = url.split('/').pop();
+        document.getElementById('file-info').textContent =
+          filename + ' \u00B7 Windows 10/11 \u00B7 약 24MB';
+      })
+      .catch(() => {
+        document.getElementById('ver').textContent = '버전 확인 실패';
+      });
+  </script>
 </body>
 </html>
