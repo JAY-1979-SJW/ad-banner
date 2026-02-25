@@ -1,7 +1,7 @@
 {
   "app_enabled": true,
   "min_version": "1.1.6",
-  "update_url": "https://github.com/JAY-1979-SJW/ad-banner/releases/download/v1.1.6/AutoCAD-AutoPlotter-Setup-v1.1.6.exe",
+  "update_url": "https://github.com/JAY-1979-SJW/autocad-auto-plotter/releases/download/v1.1.6/AutoCAD-AutoPlotter-Setup-v1.1.6.exe",
   "update_message": "새 버전(v1.1.6)이 출시되었습니다.\n업데이트 후 사용해 주세요.",
   "block_message": "현재 서비스가 중지되었습니다.",
   "banner": {
