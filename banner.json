@@ -4,10 +4,17 @@
   "update_url": "",
   "update_message": "새 버전이 있습니다. 업데이트해주세요.",
   "block_message": "현재 서비스가 중지되었습니다.",
+  "company": {
+    "name": "해한 AI 엔지니어링",
+    "line1": "해한 AI 엔지니어링 | 소방면허 · AI 프로그램 제작 전문기업",
+    "line2": "산출 · 설계보조 · BIM · 시공까지, AI 통합관리 | haehan-ai.kr",
+    "homepage": "https://haehan-ai.kr/",
+    "inquiry": "https://haehan-ai.kr/#doz_menu_Inquire"
+  },
   "banner": {
     "enabled": false,
     "image_url": "https://jay-1979-sjw.github.io/ad-banner/banner.png",
-    "click_url": "",
+    "click_url": "https://haehan-ai.kr/",
     "height": 60
   }
 }
