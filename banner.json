@@ -12,7 +12,7 @@
     "inquiry": "https://haehan-ai.kr/#doz_menu_Inquire"
   },
   "banner": {
-    "enabled": false,
+    "enabled": true,
     "image_url": "https://jay-1979-sjw.github.io/ad-banner/banner.png",
     "click_url": "https://haehan-ai.kr/",
     "height": 60
