@@ -1,6 +1,13 @@
 {
-  "enabled": true,
-  "image_url": "https://jay-1979-sjw.github.io/ad-banner/banner.png",
-  "click_url": "https://www.naver.com",
-  "text": "광고 문의: 010-xxxx-xxxx"
+  "app_enabled": true,
+  "min_version": "1.0.0",
+  "update_url": "",
+  "update_message": "새 버전이 있습니다. 업데이트해주세요.",
+  "block_message": "현재 서비스가 중지되었습니다.",
+  "banner": {
+    "enabled": false,
+    "image_url": "https://jay-1979-sjw.github.io/ad-banner/banner.png",
+    "click_url": "",
+    "height": 60
+  }
 }
